@@ -2,7 +2,7 @@
 
 This project was created with CRA (Create React App).
 
-Este é meu site para me apresentar, aqui coloco minhas habilidades, portfólio, e formas de contato.
+Ésta es mi página para presentar mi experiencia y habilidades.
 
 
 ## Used Technologies:
