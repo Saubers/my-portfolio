@@ -9,13 +9,12 @@ import boostrapIcon from "../../assets/bootstrap-icon.svg";
 import cssIcon from "../../assets/css-icon.svg";
 import htmlIcon from "../../assets/html-icon.svg";
 import jsIcon from "../../assets/js-icon.svg";
-import mysqlIcon from "../../assets/mysql-icon.svg";
+import mongoDBIcon from "../../assets/mongodb.svg";
 import nodeIcon from "../../assets/node-icon.svg";
 import reactIcon from "../../assets/react-icon.svg";
-import sassIcon from "../../assets/sass-icon.svg";
 import typescriptIcon from "../../assets/typescript-icon.svg";
 import vscodeIcon from "../../assets/vscode-icon.svg";
-import vueIcon from "../../assets/vue-icon.svg";
+import nextIcon from "../../assets/nextjs.svg";
 
 
 export function Main(){
@@ -172,7 +171,7 @@ export function Main(){
                 "height": 20
               },
               {
-                "src": mysqlIcon,
+                "src": mongoDBIcon,
                 "width": 20,
                 "height": 20
               },
@@ -187,11 +186,6 @@ export function Main(){
                 "height": 20
               },
               {
-                "src": sassIcon,
-                "width": 20,
-                "height": 20
-              },
-              {
                 "src": typescriptIcon,
                 "width": 20,
                 "height": 20
@@ -202,7 +196,7 @@ export function Main(){
                 "height": 20
               },
               {
-                "src": vueIcon,
+                "src": nextIcon,
                 "width": 20,
                 "height": 20
               },

@@ -6,7 +6,7 @@ import jsIcon from "../../assets/js-icon.svg";
 import nodeIcon from "../../assets/node-icon.svg";
 import reactIcon from "../../assets/react-icon.svg";
 import typescriptIcon from "../../assets/typescript-icon.svg";
-import vueIcon from "../../assets/vue-icon.svg";
+import nextIcon from "../../assets/nextjs.svg";
 import ScrollAnimation from "react-animate-on-scroll";
 
 
@@ -40,9 +40,9 @@ export function About(){
             </ScrollAnimation>
           </div>
 
-          <div className="hability">
-          <ScrollAnimation animateIn="fadeInUp" delay={0.2 * 1000}>
-            <img src={vueIcon} alt="Vue" />
+          <div  className="hability">
+          <ScrollAnimation animateIn="fadeInUp"  delay={0.2 * 1000}>
+            <img src={nextIcon}  alt="Next" />
           </ScrollAnimation>
           </div>
 

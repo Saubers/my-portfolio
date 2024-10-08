@@ -4,7 +4,7 @@ import { Card } from "../Card/Card";
 export function Portfolio() {
   return (
     <Container id="portfolio">
-      <h2>My portfolio</h2>
+      <h2>Works</h2>
 
       <div className="projects">
         <Card
