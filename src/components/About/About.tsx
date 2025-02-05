@@ -8,7 +8,7 @@ import reactIcon from "../../assets/react-icon.svg";
 import typescriptIcon from "../../assets/typescript-icon.svg";
 import nextIcon from "../../assets/nextjs.svg";
 import ScrollAnimation from "react-animate-on-scroll";
-
+import myImage from "../../assets/my-photo.jpg"
 
 export function About(){
   return(
@@ -80,7 +80,7 @@ export function About(){
       </div>
       <div className="about-image">
         <ScrollAnimation animateIn="fadeInRight" delay={0.6 * 1000}>
-          <img src="https://media.licdn.com/dms/image/C4D03AQGpmnA1NAr-GA/profile-displayphoto-shrink_800_800/0/1661274745078?e=1712188800&v=beta&t=Mm4E3MoF2vAqwWdga15-BX1S1KM655WTVuixt-JQrME" alt="Imagem de perfil" />
+          <img src={myImage} alt="Profile" />
         </ScrollAnimation>
       </div>
     </Container>

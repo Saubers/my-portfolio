@@ -8,14 +8,14 @@ export function Portfolio() {
 
       <div className="projects">
         <Card
-          title="TOWER TRAVEL"
-          description='I work as a Front End developer in "TOWER TRAVEL", a travel seller application.'
+          title="The Flock"
+          description='I work as a Front End Developer on the "TOWER TRAVEL" project, a large-scale travel sales application.'
           technologies={["React", "Next", "Node", "Typescript"]}
         />
         <Card
-          title="MEDIFE MOBILE"
-          description='I worked as Technical Leader in "MEDIFE MOBILE", a health insurance application.'
-          technologies={["React Native", "Expo", "Node", "Javascript"]}
+          title="OpenDev Pro"
+          description='I worked as Technical Leader in "MEDIFE MOBILE" project, a health insurance application.'
+          technologies={["React Native", "Expo", "Node", "Javascript", "Typescript"]}
         />
         <Card
           title="Workout App"
@@ -30,7 +30,7 @@ export function Portfolio() {
           ]}
         />
         <Card
-          title="REST-API for a race project"
+          title="REST-API for a Freelance race project"
           description="I developed a REST-API for a running race project."
           technologies={["JavaScript", "Node", "Express", "MongoDB"]}
         />
