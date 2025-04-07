@@ -18,19 +18,7 @@ export function Portfolio() {
           technologies={["React Native", "Expo", "Node", "Javascript", "Typescript"]}
         />
         <Card
-          title="Workout App"
-          description="A mobile application created as part of a personal project. It
-                is used to create training routines."
-          technologies={[
-            "React Native",
-            "Typescript",
-            "Node",
-            "Express",
-            "MongoDB",
-          ]}
-        />
-        <Card
-          title="REST-API for a Freelance race project"
+          title="Punto Trail"
           description="I developed a REST-API for a running race project."
           technologies={["JavaScript", "Node", "Express", "MongoDB"]}
         />
