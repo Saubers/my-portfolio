@@ -1,6 +1,5 @@
 import styled from "styled-components";
 
-
 export const Container = styled.section`
   margin-top: 20rem;
 
@@ -9,10 +8,14 @@ export const Container = styled.section`
     h2{
       text-align: center;
       font-size: 4rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      color: var(--text);
     }
     p{
-      color: var(--green);
+      color: var(--text-secondary);
       font-weight: 500;
+      margin-top: 0.8rem;
     }
   }
 
@@ -30,26 +33,30 @@ export const Container = styled.section`
       width: 50%;
       max-width: 40rem;
       gap: 2rem;
-      background-color: var(--green);
-      border-radius: 1.4rem;
+      background-color: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 1.2rem;
       padding: 1.6rem 2.8rem;
-      transition: background-color 0.25s;
+      box-shadow: var(--shadow);
+      transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
       img{
         width: 4rem;
       }
       a{
-        color: white;
+        color: var(--text);
         font-weight: 500;
+        font-size: 1.5rem;
       }
       &:hover{
-        background-color: var(--pink);
+        transform: translateY(-2px);
+        box-shadow: var(--shadow-lg);
+        border-color: var(--primary);
         a{
-          color: #FFF;
+          color: var(--primary);
         }
       }
     }
   }
-
 
   @media(max-width: 960px){
     .contacts{
@@ -60,5 +67,5 @@ export const Container = styled.section`
       }
     }
   }
-  
+
 `

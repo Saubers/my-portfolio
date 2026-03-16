@@ -1,29 +1,32 @@
 import styled from "styled-components";
 
-
 export const Container = styled.footer`
-  background-color: #2b2b2b;
+  background-color: var(--surface);
+  border-top: 1px solid var(--border);
   padding: 3rem 15rem;
   margin-top: 15rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
-
+  transition: background-color 0.3s ease, border-color 0.3s ease;
 
   .logo{
-    font-size: 2.8rem;
+    font-size: 2.4rem;
   }
 
   p{
-    letter-spacing: 0.2rem;
+    letter-spacing: 0.1rem;
     display: flex;
     align-items: center;
     gap: 0.5rem;
+    color: var(--muted);
+    font-size: 1.4rem;
     img{
-      width: 2.6rem;
+      width: 2.2rem;
       animation: spinning 5s infinite linear;
     }
   }
+
   .social-media{
     display: flex;
     align-items: center;
@@ -31,11 +34,15 @@ export const Container = styled.footer`
     gap: 1rem;
 
     img,span{
-      font-size: 3rem;
-      width: 3rem;
+      font-size: 2.6rem;
+      width: 2.6rem;
+      opacity: 0.6;
+      transition: opacity 0.2s ease;
+      &:hover{
+        opacity: 1;
+      }
     }
   }
-
 
   @keyframes spinning {
     0%{
