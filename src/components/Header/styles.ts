@@ -1,43 +1,45 @@
 import styled from "styled-components";
 
-
 export const Container = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1.8rem 10rem;
-  
-  background-color: #21212150;
-  
-  backdrop-filter: blur(6px);
+
+  background-color: rgba(15, 23, 42, 0.8);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
 
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
   z-index: 1000;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
 
   nav{
     display: flex;
     align-items: center;
     gap: 1.8rem;
     a{
-      color: #FFFF;
+      color: var(--text-secondary);
       padding: 0.6rem;
-      font-family: 'Red Hat Display', sans-serif;
+      font-family: 'Inter', sans-serif;
       font-weight: 500;
+      font-size: 1.4rem;
       text-transform: uppercase;
-      transition: filter 0.25s;
+      letter-spacing: 0.05em;
+      transition: color 0.2s ease;
 
       &.button{
-        padding: 0.6rem 5rem;
+        padding: 0.6rem 3rem;
+        color: #FFFFFF;
       }
 
       &:hover{
-        filter: brightness(0.6);
+        color: var(--primary);
       }
     }
-
   }
 
   .menu-container{
@@ -48,7 +50,7 @@ export const Container = styled.header`
   .menu{
     width: 2rem;
     height: 0.2rem;
-    background: #FFFF;
+    background: var(--text);
     position: relative;
     cursor: pointer;
     display: none;
@@ -59,7 +61,6 @@ export const Container = styled.header`
     &:after{
       top: 0.5rem;
     }
-
 
     &.active:before{
       bottom: 0;
@@ -74,7 +75,6 @@ export const Container = styled.header`
     &.active{
       background-color: rgba(0, 0, 0, 0);
     }
-
   }
 
   .menu:before, .menu:after {
@@ -83,11 +83,10 @@ export const Container = styled.header`
     position: absolute;
     width: 100%;
     height: 0.2rem;
-    background: #FFFF;
+    background: var(--text);
     cursor: pointer;
     transition: .6s;
   }
-
 
   input[type=checkbox] {
     height: 0;
@@ -98,50 +97,44 @@ export const Container = styled.header`
   label {
     cursor: pointer;
     text-indent: -9999px;
-    width: 55px;
-    height: 30px;
-    background: var(--green);
+    width: 52px;
+    height: 28px;
+    background: var(--surface);
+    border: 1px solid var(--border);
     display: block;
-    justify-content: center;
-    align-items: center;
-    -webkit-border-radius: 100px;
-    -moz-border-radius: 100px;
     border-radius: 100px;
     position: relative;
     margin-left: auto;
     right: 10px;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
   }
 
   @media only screen and (max-width: 800px) {
     label {
-    position: relative;
-   }
+      position: relative;
+    }
   }
 
   label:after {
     content: '';
-    background: #FFF;
+    background: var(--primary);
     width: 20px;
     height: 20px;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
     border-radius: 50%;
     position: absolute;
-    top: 5px;
+    top: 3px;
     left: 4px;
-   transition: cubic-bezier(0.68, -0.55, 0.27, 01.55) 320ms;
+    transition: cubic-bezier(0.68, -0.55, 0.27, 1.55) 320ms;
   }
 
   input:checked + label {
-    background: var(--pink);
+    background: var(--surface);
+    border-color: var(--secondary);
   }
 
   input:checked + label:after {
+    background: var(--secondary);
     left: calc(100% - 5px);
-    -webkit-transform: translateX(-100%);
-    -moz-transform: translateX(-100%);
-    -ms-transform: translateX(-100%);
-    -o-transform: translateX(-100%);
     transform: translateX(-100%);
   }
 
@@ -164,14 +157,19 @@ export const Container = styled.header`
       position: fixed;
       width: 100vw;
       height: 100vh;
-      background: var(--blue);
       top: 0;
       left: 0;
       transition: opacity 0.25s;
-      background-color: var(--green);
+      background-color: var(--bg);
+
+      a{
+        font-size: 2rem;
+        color: var(--text);
+      }
 
       a.button{
-        background-color: var(--pink);
+        background: linear-gradient(135deg, var(--primary), var(--secondary));
+        color: #FFFFFF;
       }
 
       &.active{
@@ -180,5 +178,5 @@ export const Container = styled.header`
       }
     }
   }
-  
+
 `

@@ -5,15 +5,10 @@ import { About } from "../About/About";
 import { Contact } from "../Contact/Contact";
 import { Portfolio } from "../Portfolio/Portfolio";
 
-import boostrapIcon from "../../assets/bootstrap-icon.svg";
-import cssIcon from "../../assets/css-icon.svg";
-import htmlIcon from "../../assets/html-icon.svg";
 import jsIcon from "../../assets/js-icon.svg";
-import mongoDBIcon from "../../assets/mongodb.svg";
 import nodeIcon from "../../assets/node-icon.svg";
 import reactIcon from "../../assets/react-icon.svg";
 import typescriptIcon from "../../assets/typescript-icon.svg";
-import vscodeIcon from "../../assets/vscode-icon.svg";
 import nextIcon from "../../assets/nextjs.svg";
 
 
@@ -124,12 +119,12 @@ export function Main(){
           "opacity": {
             "animation": {
               "enable": true,
-              "minimumValue": 0.2,
-              "speed": 1,
+              "minimumValue": 0.05,
+              "speed": 0.8,
               "sync": false
             },
             "random": true,
-            "value": 1
+            "value": 0.4
           },
           "rotate": {
             "animation": {
@@ -151,36 +146,6 @@ export function Main(){
             },
             "image": [
               {
-                "src": boostrapIcon,
-                "width": 20,
-                "height": 20
-              },
-              {
-                "src": cssIcon,
-                "width": 20,
-                "height": 20
-              },
-              {
-                "src": htmlIcon,
-                "width": 20,
-                "height": 20
-              },
-              {
-                "src": jsIcon,
-                "width": 20,
-                "height": 20
-              },
-              {
-                "src": mongoDBIcon,
-                "width": 20,
-                "height": 20
-              },
-              {
-                "src": nodeIcon,
-                "width": 20,
-                "height": 20
-              },
-              {
                 "src": reactIcon,
                 "width": 20,
                 "height": 20
@@ -191,16 +156,20 @@ export function Main(){
                 "height": 20
               },
               {
-                "src": vscodeIcon,
-                "width": 20,
-                "height": 20
-              },
-              {
                 "src": nextIcon,
                 "width": 20,
                 "height": 20
               },
-          
+              {
+                "src": nodeIcon,
+                "width": 20,
+                "height": 20
+              },
+              {
+                "src": jsIcon,
+                "width": 20,
+                "height": 20
+              },
             ],
             "polygon": {
               "sides": 5
