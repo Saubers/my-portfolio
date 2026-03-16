@@ -1,7 +1,5 @@
 import { Container } from "./styles";
 
-import cssIcon from "../../assets/css-icon.svg";
-import htmlIcon from "../../assets/html-icon.svg";
 import jsIcon from "../../assets/js-icon.svg";
 import nodeIcon from "../../assets/node-icon.svg";
 import reactIcon from "../../assets/react-icon.svg";
@@ -18,63 +16,49 @@ export function About(){
           <h2>About me</h2>
         </ScrollAnimation>
         <ScrollAnimation animateIn="fadeInLeft" delay={0.2 * 1000}>
-          <p>My name is Sebastián, i am a developer with a great passion for programming. I am passionate about delivering solutions that add to people's lives and at the same time challenge me. I improved my skills as a Front-End and Back-End developer</p>
+          <p>I help businesses ship reliable web and mobile products. Over the past 5+ years, I've built fintech platforms processing real-time payments, fleet tracking systems, healthcare apps, and travel booking engines — always focused on performance, scalability, and clean user experiences.</p>
         </ScrollAnimation>
         <ScrollAnimation animateIn="fadeInLeft" delay={0.4 * 1000} style={{marginTop: "2rem", marginBottom: "2rem"}}>
-
-          <p>I develop websites and applications using HTML, CSS, and JavaScript. I am familiar with developing layouts that provide me. I'm always improving myself with each project they put in my hands.</p>
+          <p>My approach is end-to-end: I own the full lifecycle from system architecture and API design to frontend implementation and deployment. TypeScript across the stack, battle-tested patterns, and a product mindset that prioritizes business outcomes over technical vanity.</p>
         </ScrollAnimation>
         <ScrollAnimation animateIn="fadeInLeft" delay={0.6 * 1000}>
-
-          <p>I am a dedicated person who strives to make my dreams come true, hardworking and results-oriented, I always seek to achieve the best version of myself.</p>
+          <p>Currently at Coderio, building fintech and logistics solutions for international clients. Previously led mobile projects and scaled web applications across multiple industries.</p>
         </ScrollAnimation>
 
         <ScrollAnimation animateIn="fadeInLeft" delay={0.7 * 1000}>
-          <h3>Here are my main skills:</h3>
+          <h3>Core stack:</h3>
         </ScrollAnimation>
         <div className="hard-skills">
 
           <div className="hability">
             <ScrollAnimation animateIn="fadeInUp" delay={0.1 * 1000}>
-              <img src={reactIcon} alt="React" />
+              <img src={reactIcon} alt="React / React Native" />
             </ScrollAnimation>
           </div>
 
           <div  className="hability">
           <ScrollAnimation animateIn="fadeInUp"  delay={0.2 * 1000}>
-            <img src={nextIcon}  alt="Next" />
+            <img src={nextIcon}  alt="Next.js" />
           </ScrollAnimation>
           </div>
 
           <div className="hability">
-          <ScrollAnimation animateIn="fadeInUp" delay={0.3 * 1000}> 
+          <ScrollAnimation animateIn="fadeInUp" delay={0.3 * 1000}>
+            <img src={typescriptIcon} alt="TypeScript" />
+          </ScrollAnimation>
+          </div>
+
+          <div className="hability">
+          <ScrollAnimation animateIn="fadeInUp" delay={0.4 * 1000}>
+            <img src={nodeIcon} alt="Node.js" />
+          </ScrollAnimation>
+          </div>
+
+          <div className="hability">
+          <ScrollAnimation animateIn="fadeInUp" delay={0.5 * 1000}>
             <img src={jsIcon} alt="JavaScript" />
           </ScrollAnimation>
           </div>
-
-          <div className="hability">
-          <ScrollAnimation animateIn="fadeInUp" delay={0.4 * 1000}> 
-            <img src={htmlIcon} alt="Html" />
-          </ScrollAnimation>
-          </div>
-
-          <div className="hability">
-          <ScrollAnimation animateIn="fadeInUp" delay={0.5 * 1000}> 
-            <img src={cssIcon} alt="Css" />
-          </ScrollAnimation>
-          </div>
-          <div className="hability">
-          <ScrollAnimation animateIn="fadeInUp" delay={0.6 * 1000}> 
-            <img src={nodeIcon} alt="Node" />
-          </ScrollAnimation>
-          </div>
-
-          <div className="hability">
-          <ScrollAnimation animateIn="fadeInUp" delay={0.7 * 1000}>
-            <img src={typescriptIcon} alt="Typescript" />
-          </ScrollAnimation>
-          </div>
-
 
         </div>
       </div>
