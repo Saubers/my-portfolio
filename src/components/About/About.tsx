@@ -8,7 +8,7 @@ import reactIcon from "../../assets/react-icon.svg";
 import typescriptIcon from "../../assets/typescript-icon.svg";
 import nextIcon from "../../assets/nextjs.svg";
 import ScrollAnimation from "react-animate-on-scroll";
-import myImage from "../../assets/my-photo.jpg"
+import myImage from "../../assets/my-photo.jpeg"
 
 export function About(){
   return(
