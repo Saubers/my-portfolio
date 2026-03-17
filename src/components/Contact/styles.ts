@@ -38,7 +38,8 @@ export const Container = styled.section`
       border-radius: 1.2rem;
       padding: 1.6rem 2.8rem;
       box-shadow: var(--shadow);
-      transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+      color: var(--text);
+      transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease, color 0.2s ease;
       img{
         width: 4rem;
       }

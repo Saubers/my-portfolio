@@ -17,7 +17,7 @@ interface CardProps {
               role="img"
               viewBox="0 0 24 24"
               fill="none"
-              stroke="#23ce6b"
+              stroke="var(--primary)"
               strokeWidth="1"
               strokeLinecap="round"
               strokeLinejoin="round"
