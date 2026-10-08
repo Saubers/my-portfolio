@@ -12,7 +12,7 @@ export function Footer(){
         <span>ebastián Laserna</span>
       </a>
       <div>
-        <p>This website was made with <img src={reactIcon}/></p>
+        <p>This website was made with <img src={reactIcon} alt="React" /></p>
       </div>
 
       <div className="social-media">
