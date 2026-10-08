@@ -1,43 +1,90 @@
-import ScrollAnimation from "react-animate-on-scroll"
+import ScrollAnimation from "react-animate-on-scroll";
+import { GitBranch, ExternalLink, LucideIcon } from "lucide-react";
 
+// Props for a single, text-centric project card.
 interface CardProps {
-    title: string;
-    description: string;
-    technologies: string[];
-  }
-  
-  export const Card: React.FC<CardProps> = ({ title, description, technologies }) => {
-    return (
-      <ScrollAnimation animateIn="flipInX">
-        <div className="project">
-          <header>
-            <svg
-              width="50"
-              xmlns="http://www.w3.org/2000/svg"
-              role="img"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="var(--primary)"
-              strokeWidth="1"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            >
-              <title>Folder</title>
-              <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
-            </svg>
-          </header>
-          <div className="body">
-            <h3>{title}</h3>
-            <p>{description}</p>
-          </div>
-          <footer>
-            <ul className="tech-list">
-              {technologies.map((tech, index) => (
-                <li key={index}>{tech}</li>
-              ))}
-            </ul>
+  title: string;
+  description: string;
+  icon: LucideIcon;
+  achievements: string[];
+  technologies: string[];
+  githubUrl?: string;
+  liveUrl?: string;
+}
+
+export const Card: React.FC<CardProps> = ({
+  title,
+  description,
+  icon: Icon,
+  achievements,
+  technologies,
+  githubUrl,
+  liveUrl,
+}) => {
+  return (
+    <ScrollAnimation animateIn="flipInX">
+      <div className="project">
+        <header>
+          <span className="icon-badge">
+            <Icon size={22} aria-hidden="true" />
+          </span>
+          <h3>{title}</h3>
+        </header>
+
+        <p className="description">{description}</p>
+
+        <ul className="achievements">
+          {achievements.map((achievement, index) => (
+            <li key={index}>{achievement}</li>
+          ))}
+        </ul>
+
+        <ul className="tech-list">
+          {technologies.map((tech, index) => (
+            <li key={index}>{tech}</li>
+          ))}
+        </ul>
+
+        {false && (
+          <footer className="actions">
+            {githubUrl ? (
+              <a
+                href={githubUrl}
+                target="_blank"
+                rel="noreferrer"
+                className="action"
+                aria-label={`View ${title} source code`}
+              >
+                <GitBranch size={16} aria-hidden="true" />
+                View Code
+              </a>
+            ) : (
+              <span className="action disabled" aria-disabled="true">
+                <GitBranch size={16} aria-hidden="true" />
+                View Code
+              </span>
+            )}
+
+            {liveUrl ? (
+              <a
+                href={liveUrl}
+                target="_blank"
+                rel="noreferrer"
+                className="action"
+                aria-label={`Open ${title} live demo`}
+              >
+                <ExternalLink size={16} aria-hidden="true" />
+                Live Demo
+              </a>
+            ) : (
+              <span className="action disabled" aria-disabled="true">
+                <ExternalLink size={16} aria-hidden="true" />
+                Live Demo
+              </span>
+            )}
           </footer>
-        </div>
-      </ScrollAnimation>
-    );
-  };
+        )}
+      </div>
+    </ScrollAnimation>
+  );
+};

@@ -26,6 +26,9 @@ export const Container = styled.section`
     place-items: center;
     margin-top: 8rem;
     div {
+      display: flex;
+      align-items: center;
+      gap: 1.6rem;
       width: 100%;
       max-width: 40rem;
       background-color: var(--surface);
@@ -41,11 +44,13 @@ export const Container = styled.section`
         color 0.2s ease;
       img {
         width: 4rem;
+        flex-shrink: 0;
       }
       a {
         color: var(--text);
         font-weight: 500;
         font-size: 1.5rem;
+        line-height: 1;
       }
       &:hover {
         transform: translateY(-2px);

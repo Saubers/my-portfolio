@@ -25,7 +25,8 @@ export function Header(){
             <span>ebastián Laserna</span>
           </HashLink>
           
-          <input onChange={toggleTheme} className="container_toggle" type="checkbox" id="switch" name="mode"/>
+          {/* defaultChecked reflects that light mode is the application's default theme */}
+          <input onChange={toggleTheme} className="container_toggle" type="checkbox" id="switch" name="mode" defaultChecked/>
           <label htmlFor="switch">Toggle</label>
 
           <nav className={isActive ? 'active' : ''}>
