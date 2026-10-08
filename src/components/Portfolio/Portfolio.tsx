@@ -8,17 +8,17 @@ export function Portfolio() {
 
       <div className="projects">
         <Card
-          title="dLocal — Pix Payments"
-          description="Built the mobile banking interface for dLocal's Pix payment system at Coderio. Engineered real-time transaction flows handling instant payments across Latin American markets, focusing on reliability and seamless UX under high-throughput conditions."
-          technologies={["React Native", "TypeScript", "Node.js"]}
-        />
-        <Card
           title="Trakion — Fleet Tracking"
           description="Developed a web-based vehicle tracking platform for cargo fleet management at Coderio. Designed real-time GPS visualization, route optimization dashboards, and reporting modules that give logistics operators full visibility over their fleet."
           technologies={["React", "TypeScript", "Next.js", "Node.js"]}
         />
         <Card
-          title="Canna Doctor — Grow App"
+          title="dLocal — Pix Payments"
+          description="Built the mobile banking interface for dLocal's Pix payment system at Coderio. Engineered real-time transaction flows handling instant payments across Latin American markets, focusing on reliability and seamless UX under high-throughput conditions."
+          technologies={["React Native", "TypeScript", "Node.js"]}
+        />
+        <Card
+          title="Root Track — Grow App"
           description="Architecting a comprehensive mobile application for cannabis cultivation management. Building plant lifecycle tracking, environment monitoring, and guided grow schedules — delivering a complex domain into an intuitive mobile experience."
           technologies={["React Native", "TypeScript", "Node.js", "Expo"]}
         />
