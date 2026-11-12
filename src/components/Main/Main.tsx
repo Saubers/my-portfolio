@@ -10,6 +10,7 @@ import nodeIcon from "../../assets/node-icon.svg";
 import reactIcon from "../../assets/react-icon.svg";
 import typescriptIcon from "../../assets/typescript-icon.svg";
 import nextIcon from "../../assets/nextjs.svg";
+import angularIcon from "../../assets/angular-icon.svg";
 
 
 export function Main(){
@@ -167,6 +168,11 @@ export function Main(){
               },
               {
                 "src": jsIcon,
+                "width": 20,
+                "height": 20
+              },
+              {
+                "src": angularIcon,
                 "width": 20,
                 "height": 20
               },

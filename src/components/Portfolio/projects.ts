@@ -1,4 +1,4 @@
-import { LucideIcon, Truck, CreditCard, Sprout, Plane, HeartPulse } from "lucide-react";
+import { LucideIcon, Truck, CreditCard, Sprout, Plane, HeartPulse, Boxes } from "lucide-react";
 
 // Shape of a single portfolio project. This is a text-first, image-free
 // model: visual identity comes from an abstract category icon rather than
@@ -61,14 +61,27 @@ export const projects: Project[] = [
     id: "tower-travel",
     title: "Tower Travel — Booking Engine",
     description:
-      "Large-scale travel booking platform handling thousands of daily reservations.",
+      "Developed and maintained a large-scale travel web platform, managing UI architectures across both React (Next.js) and Angular ecosystems.",
     icon: Plane,
     achievements: [
       "Search and filtering across large travel inventories",
       "Optimized reservation flows for higher conversion",
       "Built for performance at scale at The Flock",
     ],
-    technologies: ["React", "Next.js", "TypeScript", "Node.js"],
+    technologies: ["React", "Next.js", "Angular", "TypeScript", "Node.js"],
+  },
+  {
+    id: "andreani",
+    title: "Andreani — Logistics & Supply Chain",
+    description:
+      "Engineered scalable frontend architectures and enterprise tracking dashboards. Developed complex logistics modules, optimizing data rendering and RESTful API integrations to support high-volume traffic.",
+    icon: Boxes,
+    achievements: [
+      "Built enterprise tracking dashboards for high-volume logistics data",
+      "Optimized data rendering for large, high-frequency datasets",
+      "Integrated RESTful APIs across complex supply chain modules",
+    ],
+    technologies: ["Angular", "TypeScript", "Node.js"],
   },
   {
     id: "medife",

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="angular-shield" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E23237"/>
+      <stop offset="100%" stop-color="#B52E31"/>
+    </linearGradient>
+  </defs>
+  <polygon fill="url(#angular-shield)" points="256,18 468,96 440,356 256,496 72,356 44,96"/>
+  <polygon fill="#FFFFFF" points="256,118 160,392 198,392"/>
+  <polygon fill="#FFFFFF" points="256,118 352,392 314,392"/>
+  <polygon fill="#FFFFFF" points="224,270 288,270 295,300 218,300"/>
+</svg>

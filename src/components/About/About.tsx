@@ -5,6 +5,7 @@ import nodeIcon from "../../assets/node-icon.svg";
 import reactIcon from "../../assets/react-icon.svg";
 import typescriptIcon from "../../assets/typescript-icon.svg";
 import nextIcon from "../../assets/nextjs.svg";
+import angularIcon from "../../assets/angular-icon.svg";
 import ScrollAnimation from "react-animate-on-scroll";
 import myImage from "../../assets/my-photo.jpeg"
 
@@ -57,6 +58,12 @@ export function About(){
           <div className="hability">
           <ScrollAnimation animateIn="fadeInUp" delay={0.5 * 1000}>
             <img src={jsIcon} alt="JavaScript" />
+          </ScrollAnimation>
+          </div>
+
+          <div className="hability">
+          <ScrollAnimation animateIn="fadeInUp" delay={0.6 * 1000}>
+            <img src={angularIcon} alt="Angular" />
           </ScrollAnimation>
           </div>
 
