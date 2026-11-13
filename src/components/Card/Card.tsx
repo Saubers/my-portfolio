@@ -1,7 +1,8 @@
 import ScrollAnimation from "react-animate-on-scroll";
 import { GitBranch, ExternalLink, LucideIcon } from "lucide-react";
+import { ProjectCarousel } from "../ProjectCarousel/ProjectCarousel";
 
-// Props for a single, text-centric project card.
+// Props for a single project card.
 interface CardProps {
   title: string;
   description: string;
@@ -10,6 +11,7 @@ interface CardProps {
   technologies: string[];
   githubUrl?: string;
   liveUrl?: string;
+  images?: string[];
 }
 
 export const Card: React.FC<CardProps> = ({
@@ -20,10 +22,13 @@ export const Card: React.FC<CardProps> = ({
   technologies,
   githubUrl,
   liveUrl,
+  images,
 }) => {
   return (
     <ScrollAnimation animateIn="flipInX">
       <div className="project">
+        <ProjectCarousel images={images} title={title} />
+
         <header>
           <span className="icon-badge">
             <Icon size={22} aria-hidden="true" />
@@ -51,7 +56,7 @@ export const Card: React.FC<CardProps> = ({
               <a
                 href={githubUrl}
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener noreferrer"
                 className="action"
                 aria-label={`View ${title} source code`}
               >
@@ -69,7 +74,7 @@ export const Card: React.FC<CardProps> = ({
               <a
                 href={liveUrl}
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener noreferrer"
                 className="action"
                 aria-label={`Open ${title} live demo`}
               >
