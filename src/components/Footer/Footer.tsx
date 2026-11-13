@@ -16,11 +16,11 @@ export function Footer(){
       </div>
 
       <div className="social-media">
-        <a href="https://www.linkedin.com/in/sebal-fullstack/" target="_blank" rel="noreferrer">
+        <a href="https://www.linkedin.com/in/sebal-fullstack/" target="_blank" rel="noopener noreferrer">
           <img src={linkedinIcon} alt="Linkedin" />
         </a>
 
-        <a href="https://github.com/Saubers" target="_blank" rel="noreferrer">
+        <a href="https://github.com/Saubers" target="_blank" rel="noopener noreferrer">
           <img src={githubIcon} alt="GitHub" />
         </a>
       </div>

@@ -18,6 +18,7 @@ export function Portfolio() {
             technologies={project.technologies}
             githubUrl={project.githubUrl}
             liveUrl={project.liveUrl}
+            images={project.images}
           />
         ))}
       </div>
