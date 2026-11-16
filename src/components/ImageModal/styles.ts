@@ -35,7 +35,8 @@ export const ModalContent = styled.div`
   align-items: center;
   justify-content: center;
 
-  img {
+  img,
+  video {
     max-width: 90vw;
     max-height: 90vh;
     width: auto;

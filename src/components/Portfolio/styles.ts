@@ -55,6 +55,24 @@ export const Container = styled.section`
           background-color: var(--surface-hover);
           color: var(--primary);
         }
+
+        .live-link{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 3.2rem;
+          height: 3.2rem;
+          flex-shrink: 0;
+          margin-left: auto;
+          border-radius: 0.8rem;
+          color: var(--text-secondary);
+          transition: background-color 0.2s ease, color 0.2s ease;
+
+          &:hover{
+            background-color: var(--surface-hover);
+            color: var(--primary);
+          }
+        }
       }
 
       h3{

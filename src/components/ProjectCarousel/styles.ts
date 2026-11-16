@@ -44,7 +44,8 @@ export const Container = styled.div`
       transform: scale(1.15);
     }
 
-    img {
+    img,
+    video {
       position: relative;
       z-index: 1;
       max-width: 100%;
@@ -52,6 +53,15 @@ export const Container = styled.div`
       object-fit: contain;
       user-select: none;
       cursor: zoom-in;
+    }
+
+    /* Videos have no CSS backgroundImage equivalent for the blurred
+       letterbox fill behind them, so they fall back to the slide's own
+       background-color and fill the full slide at all times. */
+    video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
   }
 `;

@@ -2,6 +2,7 @@ import { useCallback, useEffect, useState } from "react";
 import { createPortal } from "react-dom";
 import { X, ChevronLeft, ChevronRight } from "lucide-react";
 import { Overlay, ModalContent, CloseButton, NavButton } from "./styles";
+import { isVideoSrc } from "../../utils/media";
 
 interface ImageModalProps {
   images: string[];
@@ -85,12 +86,24 @@ export const ImageModal: React.FC<ImageModalProps> = ({
       )}
 
       <ModalContent onClick={(event) => event.stopPropagation()}>
-        <img
-          key={currentIndex}
-          src={images[currentIndex]}
-          alt={`${alt} — screenshot ${currentIndex + 1}`}
-          decoding="async"
-        />
+        {isVideoSrc(images[currentIndex]) ? (
+          <video
+            key={currentIndex}
+            src={images[currentIndex]}
+            controls
+            autoPlay
+            loop
+            muted
+            playsInline
+          />
+        ) : (
+          <img
+            key={currentIndex}
+            src={images[currentIndex]}
+            alt={`${alt} — screenshot ${currentIndex + 1}`}
+            decoding="async"
+          />
+        )}
       </ModalContent>
     </Overlay>,
     document.body
