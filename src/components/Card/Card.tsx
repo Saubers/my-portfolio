@@ -12,6 +12,7 @@ interface CardProps {
   githubUrl?: string;
   liveUrl?: string;
   images?: string[];
+  video?: string;
 }
 
 export const Card: React.FC<CardProps> = ({
@@ -23,17 +24,30 @@ export const Card: React.FC<CardProps> = ({
   githubUrl,
   liveUrl,
   images,
+  video,
 }) => {
   return (
     <ScrollAnimation animateIn="flipInX">
       <div className="project">
-        <ProjectCarousel images={images} title={title} />
+        <ProjectCarousel images={images} video={video} title={title} />
 
         <header>
           <span className="icon-badge">
             <Icon size={22} aria-hidden="true" />
           </span>
           <h3>{title}</h3>
+
+          {liveUrl && (
+            <a
+              href={liveUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="live-link"
+              aria-label={`Open ${title} live demo`}
+            >
+              <ExternalLink size={18} aria-hidden="true" />
+            </a>
+          )}
         </header>
 
         <p className="description">{description}</p>

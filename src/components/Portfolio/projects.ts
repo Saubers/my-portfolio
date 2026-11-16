@@ -7,6 +7,7 @@ import {
   HeartPulse,
   Boxes,
   ShoppingBag,
+  Printer3d,
 } from "lucide-react";
 
 // Shape of a single portfolio project. Visual identity comes primarily from
@@ -31,9 +32,31 @@ export interface Project {
   // will simply not render for that card. Mobile (portrait) and desktop
   // (landscape) screenshots can be freely mixed in the same array.
   images?: string[];
+  // Optional single video (e.g. a looping product demo). Store the file in
+  // `public/assets/projects/<id>/` and reference its public path here, e.g.
+  // `/assets/projects/print-ops/1.webm`. When present, it is shown as the
+  // first "slide" ahead of any `images`, in both the card carousel and the
+  // full-screen lightbox.
+  video?: string;
 }
 
 export const projects: Project[] = [
+  {
+    id: "print-ops",
+    title: "PrintOps",
+    description:
+      "Local-First static web tool to instantly quote 3D prints and generate PDF estimates. It uses Three.js for interactive in-browser rendering and Web Workers to calculate the volume of complex STL meshes on a background thread, ensuring a steady 60 FPS without freezing the UI.",
+    icon: Printer3d,
+    achievements: [
+      "Real-time 3D rendering of STL meshes in the browser with Three.js",
+      "Offloaded complex mesh volume calculations to Web Workers for a steady 60 FPS UI",
+      "Instant, local-first PDF quote generation with zero backend round-trips",
+    ],
+    technologies: ["Angular 18", "Three.js", "Web Workers", "Tailwind CSS", "Local-First"],
+    githubUrl: "https://github.com/Saubers/print-ops",
+    liveUrl: "https://print-ops.pages.dev/",
+    video: "/assets/projects/print-ops/1.mp4",
+  },
   {
     id: "trakion",
     title: "Trakion — Fleet Tracking",
@@ -46,6 +69,7 @@ export const projects: Project[] = [
       "Custom reporting modules for full fleet visibility",
     ],
     technologies: ["React", "TypeScript", "Next.js", "Node.js"],
+    liveUrl: "https://plataforma.trakion.cl/",
     images: [
       "/assets/projects/trakion/1.webp",
       "/assets/projects/trakion/2.webp",
@@ -66,6 +90,7 @@ export const projects: Project[] = [
       "Focused on fast load times and mobile-first shopping UX",
     ],
     technologies: ["React", "TypeScript", "Node.js"],
+    liveUrl: "https://cairoaccesorios.com/",
     images: [
       "/assets/projects/cairo/1.webp",
       "/assets/projects/cairo/2.webp",
@@ -115,6 +140,7 @@ export const projects: Project[] = [
       "Built for performance at scale at The Flock",
     ],
     technologies: ["React", "Next.js", "Angular", "TypeScript", "Node.js"],
+    liveUrl: "https://www.towertravel.com.ar/es/inicio",
     images: ["/assets/projects/tower-travel/1.webp"],
   },
   {
@@ -129,6 +155,8 @@ export const projects: Project[] = [
       "Shipped features that simplified policy management",
     ],
     technologies: ["React Native", "Expo", "TypeScript", "Node.js"],
+    liveUrl:
+      "https://play.google.com/store/apps/details?id=com.medife.mobile&pcampaignid=web_share",
     images: [
       "/assets/projects/medife/1.webp",
       "/assets/projects/medife/2.webp",
